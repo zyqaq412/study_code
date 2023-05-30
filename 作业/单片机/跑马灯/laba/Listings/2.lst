@@ -1,0 +1,58 @@
+C51 COMPILER V9.60.0.0   2                                                                 03/29/2023 21:01:54 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE 2
+OBJECT MODULE PLACED IN .\Objects\2.obj
+COMPILER INVOKED BY: D:\Asoftware\study\uV5\C51\BIN\C51.EXE 2.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\List
+                    -ings\2.lst) TABS(2) OBJECT(.\Objects\2.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #include<intrins.h>
+   3          
+   4          sbit SW7 = P1^4;
+   5          sbit lb = P1^7;
+   6          
+   7          void delay(int x){
+   8   1        int y;
+   9   1        for(x;x>0;x--)
+  10   1          for(y=0;y<100;y++);
+  11   1      
+  12   1      }
+  13          
+  14          void main(){
+  15   1        unsigned int temp;
+  16   1        // P2M1 = 0x00;
+  17   1        // P2M0 = 0xff;
+  18   1        temp = 0x01;
+  19   1        while(1){
+  20   2          if(SW7 == 1){
+  21   3                  P2= temp;
+  22   3                  temp = _cror_(temp,1);
+  23   3              lb  = 0;
+  24   3                  delay(300);
+  25   3                  
+  26   3          }else{
+  27   3            P2= temp;
+  28   3            temp = _crol_(temp,1);
+  29   3            lb  = 1;
+  30   3            delay(300);
+  31   3          }
+  32   2        }
+  33   1      }
+  34          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     94    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
