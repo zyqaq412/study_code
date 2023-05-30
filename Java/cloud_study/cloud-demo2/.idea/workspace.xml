@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="783d9215-304d-4d50-896e-5b0d782efcdb" name="变更" comment="网关服务first comment">
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/order-service/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Asoftware/computer/apache-maven-3.5.4" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\Asoftware\computer\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2OK34BIycWOcwD6gG3vSm0WRyG6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/code/study/study2023/cloud-demo2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.1484375&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;64d48b3bbcd14fe2109e77c350040a8b&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzy.gateway.GatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hzy.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzy.order.OrderApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hzy.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzy.user.UserApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8082" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hzy.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="test" />
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzy.user.UserApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8084" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hzy.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzy.user.UserApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hzy.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.UserApplication (2)" />
+      <item itemvalue="Spring Boot.UserApplication (1)" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.OrderApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.OrderApplication" />
+        <item itemvalue="Spring Boot.UserApplication (1)" />
+        <item itemvalue="Spring Boot.UserApplication (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="783d9215-304d-4d50-896e-5b0d782efcdb" name="变更" comment="" />
+      <created>1681295253182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681295253182</updated>
+      <workItem from="1681295254284" duration="3596000" />
+      <workItem from="1681356318388" duration="7000" />
+      <workItem from="1682252379588" duration="5333000" />
+      <workItem from="1682257930814" duration="1290000" />
+      <workItem from="1682312270513" duration="4944000" />
+      <workItem from="1682398496936" duration="184000" />
+      <workItem from="1682485717120" duration="2713000" />
+      <workItem from="1682489119399" duration="1375000" />
+      <workItem from="1682490731410" duration="15922000" />
+      <workItem from="1682601569353" duration="7376000" />
+      <workItem from="1682659369381" duration="17000" />
+      <workItem from="1683275754131" duration="6306000" />
+      <workItem from="1683284501763" duration="611000" />
+      <workItem from="1683294471130" duration="103000" />
+      <workItem from="1683383212381" duration="774000" />
+      <workItem from="1683446210926" duration="7196000" />
+      <workItem from="1683881355571" duration="8631000" />
+      <workItem from="1684498458713" duration="4648000" />
+    </task>
+    <task id="LOCAL-00001" summary="用户服务first commit">
+      <created>1682253523756</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682253523756</updated>
+    </task>
+    <task id="LOCAL-00002" summary="订单服务first commit">
+      <created>1682253544858</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682253544858</updated>
+    </task>
+    <task id="LOCAL-00003" summary="springCloudStudy first commit">
+      <created>1682253649329</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682253649329</updated>
+    </task>
+    <task id="LOCAL-00004" summary="微服务远程调用&#10;订单查询时调用用户查询查询用户信息封装到订单里面&#10;1.创建RestTemplate并注入容器&#10;2.使用RestTemplate发送http请求">
+      <created>1682254436281</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682254436281</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Eureka注册中心&#10;order服务使用硬编码请求user并不合适，使用Eureka注册中心来解决这个问题">
+      <created>1682256458831</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682256458831</updated>
+    </task>
+    <task id="LOCAL-00006" summary="将userservice注册到Eureka">
+      <created>1682256795747</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682256795747</updated>
+    </task>
+    <task id="LOCAL-00007" summary="将orderservice注册到Eureka">
+      <created>1682256867871</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682256867871</updated>
+    </task>
+    <task id="LOCAL-00008" summary="修改user，order服务名">
+      <created>1682257586001</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682257586001</updated>
+    </task>
+    <task id="LOCAL-00009" summary="修改orderserver&#10;将服务请求方式从ip改为以服务名访问">
+      <created>1682257671124</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682257671124</updated>
+    </task>
+    <task id="LOCAL-00010" summary="负载均衡规则&#10;两种设置方式">
+      <created>1682486984588</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682486984588</updated>
+    </task>
+    <task id="LOCAL-00011" summary="开启饥饿加载">
+      <created>1682488319526</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682488319526</updated>
+    </task>
+    <task id="LOCAL-00012" summary="在cloud-demo父工程中添加spring-cloud-alilbaba的管理依赖&#10;注释掉order-service和user-service中原有的eureka依赖&#10;添加nacos的客户端依赖">
+      <created>1682489726629</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682489726629</updated>
+    </task>
+    <task id="LOCAL-00013" summary="修改user-service和order-service中的application.yml文件，注释掉eureka地址，添加nacos地址">
+      <created>1682490113411</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682490113411</updated>
+    </task>
+    <task id="LOCAL-00014" summary=",">
+      <created>1682491082925</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1682491082925</updated>
+    </task>
+    <task id="LOCAL-00015" summary=",">
+      <created>1682491160172</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1682491160172</updated>
+    </task>
+    <task id="LOCAL-00016" summary="nacos注册中心同集群优先访问策略">
+      <created>1682509730310</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1682509730310</updated>
+    </task>
+    <task id="LOCAL-00017" summary="nacos注册中心&#10;命名空间设置，临时实例设置">
+      <created>1682513807185</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1682513807185</updated>
+    </task>
+    <task id="LOCAL-00018" summary="nacos配置管理&#10;统一配置管理">
+      <created>1682603853543</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1682603853543</updated>
+    </task>
+    <task id="LOCAL-00019" summary="nacos配置热更新第一种方式">
+      <created>1682605446269</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682605446269</updated>
+    </task>
+    <task id="LOCAL-00020" summary="nacos配置热更新第二种方式">
+      <created>1682606147899</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1682606147899</updated>
+    </task>
+    <task id="LOCAL-00021" summary="多环境共享配置">
+      <created>1682606741835</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1682606741835</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Feign远程调用">
+      <created>1683276286788</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1683276286788</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Feign远程调用&#10;启动类添加@EnableFeignClients注解">
+      <created>1683276544413</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1683276544413</updated>
+    </task>
+    <task id="LOCAL-00024" summary="共享环境测试">
+      <created>1683277026915</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1683277026915</updated>
+    </task>
+    <task id="LOCAL-00025" summary="网关服务firest comment">
+      <created>1683446560970</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1683446560970</updated>
+    </task>
+    <task id="LOCAL-00026" summary="网关服务first comment">
+      <created>1683446788174</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1683446788174</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="bootstrap.yaml" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="application.yml" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
+    <MESSAGE value="用户服务first commit" />
+    <MESSAGE value="订单服务first commit" />
+    <MESSAGE value="springCloudStudy first commit" />
+    <MESSAGE value="微服务远程调用&#10;订单查询时调用用户查询查询用户信息封装到订单里面&#10;1.创建RestTemplate并注入容器&#10;2.使用RestTemplate发送http请求" />
+    <MESSAGE value="Eureka注册中心&#10;order服务使用硬编码请求user并不合适，使用Eureka注册中心来解决这个问题" />
+    <MESSAGE value="将userservice注册到Eureka" />
+    <MESSAGE value="将orderservice注册到Eureka" />
+    <MESSAGE value="修改user，order服务名" />
+    <MESSAGE value="修改orderserver&#10;将服务请求方式从ip改为以服务名访问" />
+    <MESSAGE value="负载均衡规则&#10;两种设置方式" />
+    <MESSAGE value="开启饥饿加载" />
+    <MESSAGE value="在cloud-demo父工程中添加spring-cloud-alilbaba的管理依赖&#10;注释掉order-service和user-service中原有的eureka依赖&#10;添加nacos的客户端依赖" />
+    <MESSAGE value="修改user-service和order-service中的application.yml文件，注释掉eureka地址，添加nacos地址" />
+    <MESSAGE value="," />
+    <MESSAGE value="nacos注册中心同集群优先访问策略" />
+    <MESSAGE value="nacos注册中心&#10;命名空间设置，临时实例设置" />
+    <MESSAGE value="nacos配置管理&#10;统一配置管理" />
+    <MESSAGE value="nacos配置热更新第一种方式" />
+    <MESSAGE value="nacos配置热更新第二种方式" />
+    <MESSAGE value="多环境共享配置" />
+    <MESSAGE value="Feign远程调用" />
+    <MESSAGE value="Feign远程调用&#10;启动类添加@EnableFeignClients注解" />
+    <MESSAGE value="共享环境测试" />
+    <MESSAGE value="网关服务firest comment" />
+    <MESSAGE value="网关服务first comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="网关服务first comment" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((LinkedHashMap)((FeignInvocationHandler)this.h).dispatch).entrySet().toArray()[0]" custom="java.util.LinkedHashMap,java.lang.reflect.Proxy,feign.ReflectiveFeign.FeignInvocationHandler" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
