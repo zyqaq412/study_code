@@ -1,0 +1,13 @@
+logging:
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+spring:
+  rabbitmq:
+    host: 192.168.193.40 # rabbitMQ的ip地址
+    port: 5672 # 端口
+    username: itcast
+    password: 123321
+    virtual-host: /
+    listener:
+      simple:
+        prefetch: 1 # 设置预取上限 一次只能拿一条处理完了才拿下一条
