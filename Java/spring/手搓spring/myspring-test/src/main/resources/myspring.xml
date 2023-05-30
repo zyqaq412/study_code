@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans>
+    <bean id="book" class="com.hzy.pojo.Book">
+        <property name="name" value="剑来"></property>
+        <property name="zName" value="hzy"></property>
+    </bean>
+
+    <bean id="bookDaoBean" class="com.hzy.dao.BookDao">
+
+    </bean>
+    <bean id="bookService" class="com.hzy.service.BookService">
+        <property name="bookDao" ref="bookDaoBean"></property>
+    </bean>
+</beans>
