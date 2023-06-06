@@ -1,5 +1,5 @@
 /**
- * @title: BubbleSort
+ * @title: BubbleSort 冒泡排序
  * @Author zxwyhzy
  * @Date: 2023/6/6 22:39
  * @Version 1.0
@@ -13,11 +13,12 @@ public class BubbleSort {
         }
     }
     public static void sort(int[] arr){
-        int length = arr.length - 1;
-        for (int i = 0; i < length - 1; i++) {
-            for (int j = 0; j < length - i; j++) {
-                if (arr[j] > arr[j+1]){
-                    int temp = arr[j];
+        int n = arr.length;
+        // n 个数据只需要比较 n-1 次
+        for (int i = 0; i < n - 1; i++) { // 进行 n-1 轮排序
+            for (int j = 0; j < n - i - 1; j++) { // 在未排序的部分中进行比较和交换
+                if (arr[j] > arr[j+1]){ // 如果前一个元素大于后一个元素
+                    int temp = arr[j]; // 交换两个元素的位置
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
                 }
