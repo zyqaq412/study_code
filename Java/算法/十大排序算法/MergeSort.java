@@ -19,45 +19,43 @@ public class MergeSort {
         if (start >= end) {
             return;
         }
-        int mid = (start + end) / 2;
-        sort(arr, start, mid);
-        sort(arr, mid + 1, end);
-        marge(arr, start, mid, end);
-
+        int mid = (start + end) / 2; // 计算数组的中间索引
+        sort(arr, start, mid); // 对左侧子数组进行排序
+        sort(arr, mid + 1, end); // 对右侧子数组进行排序
+        merge(arr, start, mid, end); // 合并两个有序子数组
     }
 
-    // 合并
-    public static void marge(int[] arr, int start, int mid, int end) {
-        int[] temp = new int[end - start + 1];
-        int leftIndex = start;
-        //  在归并排序中，mid 是分割数组的索引，而不是包含在右侧子数组中的索引。
-        //  因此，rightIndex 应该初始化为 mid + 1 而不是 mid。
-        //  rightIndex = mid;
-        int rightIndex = mid+1;
-        int p = 0;
+    // 合并两个有序子数组
+    public static void merge(int[] arr, int start, int mid, int end) {
+        int[] temp = new int[end - start + 1]; // 创建临时数组来存储合并结果
+        int leftIndex = start; // 左侧子数组的起始索引
+        int rightIndex = mid + 1; // 右侧子数组的起始索引
+        int p = 0; // 临时数组的索引
+
         while (leftIndex <= mid && rightIndex <= end) {
             if (arr[leftIndex] <= arr[rightIndex]) {
-                temp[p++] = arr[leftIndex++];
+                temp[p++] = arr[leftIndex++]; // 将左侧子数组的元素放入临时数组
             } else {
-                temp[p++] = arr[rightIndex++];
+                temp[p++] = arr[rightIndex++]; // 将右侧子数组的元素放入临时数组
             }
         }
 
+        // 处理剩余的元素
         if (leftIndex > mid) {
             while (rightIndex <= end) {
-                temp[p++] = arr[rightIndex++];
+                temp[p++] = arr[rightIndex++]; // 将剩余的右侧子数组元素放入临时数组
             }
         }
 
         if (rightIndex > end) {
             while (leftIndex <= mid) {
-                temp[p++] = arr[leftIndex++];
+                temp[p++] = arr[leftIndex++]; // 将剩余的左侧子数组元素放入临时数组
             }
         }
 
-
+        // 将临时数组中的元素复制回原数组的对应位置
         for (int i = 0; i < temp.length; i++) {
-            arr[i+start] = temp[i];
+            arr[i + start] = temp[i];
         }
     }
 }
