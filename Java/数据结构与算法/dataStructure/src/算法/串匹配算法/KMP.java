@@ -22,8 +22,8 @@ package 算法.串匹配算法;
 public class KMP {
 
     public static void main(String[] args) {
-        String str = "abcababca";
-        String s = "abcabx";
+        String str = "ababeababx";
+        String s = "ababx";
         System.out.println(kmpSearch(str, s));
     }
 
@@ -36,14 +36,17 @@ public class KMP {
         int i = 0,j = 0;
 
 
-        // 子串长度大于剩余未比较主串长度，那s一定不是str的字串
-        while (i <= strs.length - ss.length){
+        while (i < strs.length && j < ss.length){
             if (strs[i] == ss[j]){
                 i++;
                 j++;
                 if (j == ss.length) return true;
             }else {
-                j = next[j];
+                if (j > 0) {
+                    j = next[j - 1];
+                } else {
+                    i++;
+                }
             }
         }
         return false;
