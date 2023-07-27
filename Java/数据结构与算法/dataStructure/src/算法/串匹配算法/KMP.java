@@ -22,14 +22,14 @@ package 算法.串匹配算法;
 public class KMP {
 
     public static void main(String[] args) {
-        String str = "ababeababx";
-        String s = "ababx";
+        String str = "aabaaabaaac";
+        String s =   "aabaaac";
         System.out.println(kmpSearch(str, s));
     }
 
 
     // KMP算法匹配过程
-    public static boolean kmpSearch(String str, String s) {
+    public static int kmpSearch(String str, String s) {
         int[] next = buildPartialMatchTable(s);
         char[] strs = str.toCharArray();
         char[] ss = s.toCharArray();
@@ -40,16 +40,17 @@ public class KMP {
             if (strs[i] == ss[j]){
                 i++;
                 j++;
-                if (j == ss.length) return true;
+                if (j == ss.length) return i-j;
             }else {
                 if (j > 0) {
                     j = next[j - 1];
                 } else {
+                    //
                     i++;
                 }
             }
         }
-        return false;
+        return -1;
 
     }
     // 构建部分匹配表（Partial Match Table）
@@ -58,15 +59,48 @@ public class KMP {
         int[] next = new int[strs.length];
         int k = 0;
         for (int i = 1; i < strs.length; i++) {
+            // 修改2 简单
+            // 回溯到上一个相同前缀的位置
+            while (k > 0 && strs[k] != strs[i]){
+                k = next[k-1];
+            }
             if (strs[k] == strs[i]){
                 k++;
+            }
+            // 前j个字符，前后缀重复k个字符
+            next[i] = k;
+
+
+
+            /*if (strs[k] == strs[i]){
+                k++;
             }else {
+            // 这里有问题：回溯到上一个相同前缀位置时还没有比较就给next[i]赋值且i加1了
                 // 回溯到上一个相同前缀的位置
                 while (k > 0 && strs[k] != strs[i]){
                     k = next[k-1];
                 }
             }
-            next[i] = k;
+            next[i] = k;*/
+
+            // 修改1 没有问题但有点复杂
+
+            /*if (strs[k] == strs[i]){
+                k++;
+                next[i] = k; // 更新部分匹配值数组
+            } else {
+                // 回溯到上一个相同前缀的位置
+                while (k > 0 && strs[k] != strs[i]){
+                    k = next[k-1];
+                }
+
+                if (strs[k] == strs[i]) {
+                    k++;
+                }
+                next[i] = k; // 更新部分匹配值数组
+            }*/
+
+
         }
         return next;
     }
