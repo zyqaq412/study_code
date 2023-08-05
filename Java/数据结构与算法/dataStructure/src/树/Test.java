@@ -34,12 +34,17 @@ public class Test {
          *   d       e     f         g
          * h
          * */
-        // 中序线索化
-        BinaryTreeCueing.cueing(root);
+/*        // 中序线索化
+        BinaryTreeCueing.inCueing(root);
         // 中序遍历线索化 h-d-b-e-a-f-c-g
         BinaryTreeCueing.inOrder(root); // h	d	b	e	a	c	g
         // 修改后 h	d	b	e	a	f	c	g
+        System.out.println();*/
+
+        // 前序线索化
+        BinaryTreeCueing.preCueing(root);
         System.out.println();
+        BinaryTreeCueing.preOrder(root);
 
     }
 
