@@ -1,0 +1,8 @@
+alipay:
+    appId:
+    appPrivateKey:
+    alipayPublicKey:
+    notifyUrl:
+    gateway: https://openapi-sandbox.dl.alipaydev.com/gateway.do
+server:
+    port: 8088

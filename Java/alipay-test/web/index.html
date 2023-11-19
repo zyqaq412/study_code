@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>商城</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div id="box">
+    <div>
+        <h1>订单列表</h1>
+        <ul>
+            <li v-for="order in orders" :key="order.orderId">
+                <h3>{{ order.subject }}</h3>
+                <p>价格: ¥{{ order.price }}</p>
+                <p>{{ order.body }}</p>
+                <button v-on:click="pay(order)">购买</button>
+                <hr>
+            </li>
+        </ul>
+    </div>
+    <div v-html="paymentFormHtml"></div>
+</div>
+<script type="text/javascript">
+    var vm = new Vue({
+        el: '#box',
+        data: {
+            orders: [
+                {
+                    "price": "12148.00",
+                    "subject": "iPhone 15 Pro Max 512GB 原色钛金属",
+                    "body": "iPhone 15 Pro Max 512GB 原色钛金属"
+                },
+                {
+                    "price": "4999",
+                    "subject": "xiaomi 14 钛金属",
+                    "body": "xiaomi 14 钛金属 256gb"
+                }
+            ],
+
+
+            paymentFormHtml: "" // 新增 paymentFormHtml 属性
+        },
+        methods: {
+            pay: function (order) {
+
+                axios.post('http://127.0.0.1:8088/alipay/pay', order)
+
+                    .then(res => {
+                        // 处理支付成功的逻辑
+                        console.log('支付成功', res.data);
+                        this.paymentFormHtml = res.data.data;
+                        // 手动提交表单
+
+                        // 在延时后提交表单
+                        setTimeout(function () {
+                            document.forms['punchout_form'].submit();
+                        }, 1000); // 1000毫秒，即1秒
+
+                    })
+                    .catch(error => {
+                        // 处理支付失败或其他错误的逻辑
+                        console.error('支付失败', error);
+                    });
+            }
+        }
+    });
+</script>
+
+
+</body>
+
+</html>
