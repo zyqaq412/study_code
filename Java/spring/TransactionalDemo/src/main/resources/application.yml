@@ -1,0 +1,23 @@
+Spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 120125hzy.
+    type:  com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 5
+      min-idle: 5
+      max-active: 10
+      max-wait: 30000
+mybatis-plus: # MyBatis Plus??
+  configuration:
+    map-underscore-to-camel-case: true # ???????
+logging: # ????? SQL
+  level:
+    com:
+      example:
+        mapper: debug
+    org:
+      springframework:
+        transaction: debug
